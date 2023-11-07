@@ -9,6 +9,7 @@
     "allowUnusedLabels": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": true,
     "skipLibCheck": true,
     "outDir": "dist"
   },
