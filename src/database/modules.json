@@ -1,0 +1,56 @@
+[
+  {
+    "_id": 1,
+    "name": "HTML",
+    "description": "Intro to HTML",
+    "course": 1
+  },
+  {
+    "_id": 2,
+    "name": "CSS",
+    "description": "Styling HTML with CSS",
+    "course": 1
+  },
+  {
+    "_id": 3,
+    "name": "Javascript",
+    "description": "Intro to Javascript",
+    "course": 1
+  },
+  {
+    "_id": 4,
+    "name": "Software Lifecycle",
+    "description": "Stages of the Software Lifecycle",
+    "course": 2
+  },
+  {
+    "_id": 5,
+    "name": "Socially Responsible Developer",
+    "description": "How to be a socially responsible developer",
+    "course": 2
+  },
+  {
+    "_id": 6,
+    "name": "Software Arhitetures",
+    "description": "How to choose the right software architecture",
+    "course": 2
+  },
+  {
+    "_id": 7,
+    "name": "Divide and Conquer",
+    "description": "Divide and Conquer Algorithms",
+    "course": 3
+  },
+  {
+    "_id": 8,
+    "name": "Dynamic Programming",
+    "description": "Reduce runtime by memoization",
+    "course": 3
+  },
+  {
+    "_id": 9,
+    "name": "Graphs",
+    "description": "Graph Algorithms",
+    "course": 3
+  }
+]

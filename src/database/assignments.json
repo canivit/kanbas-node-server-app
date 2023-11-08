@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 1,
+    "title": "A1 - HTML",
+    "course": 1
+  },
+  {
+    "_id": 2,
+    "title": "A2 - CSS",
+    "course": 1
+  },
+  {
+    "_id": 3,
+    "title": "A3 - React",
+    "course": 1
+  },
+  {
+    "_id": 4,
+    "title": "xjson",
+    "course": 2
+  },
+  {
+    "_id": 5,
+    "title": "xgui",
+    "course": 2
+  },
+  {
+    "_id": 6,
+    "title": "xtcp",
+    "course": 2
+  },
+  {
+    "_id": 7,
+    "title": "PS1 - Divide and Conquer",
+    "course": 3
+  },
+  {
+    "_id": 8,
+    "title": "PS2 - Dynamic Programming",
+    "course": 3
+  },
+  {
+    "_id": 9,
+    "title": "PS3 - Greedy Algorithms",
+    "course": 3
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "_id": 1,
+    "username": "asimants0",
+    "password": "pC7_?Zn*bpEQdK",
+    "firstName": "Angelo",
+    "lastName": "Simants",
+    "email": "asimants0@abc.net.au",
+    "dob": "2000-12-03",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 2,
+    "username": "pliddle1",
+    "password": "xO9~JBUK",
+    "firstName": "Peri",
+    "lastName": "Liddle",
+    "email": "pliddle1@economist.com",
+    "dob": "2001-08-08",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 3,
+    "username": "dtrosdall2",
+    "password": "xE3{Rm$MqX.m*DL",
+    "firstName": "Devlen",
+    "lastName": "Trosdall",
+    "email": "dtrosdall2@wordpress.org",
+    "dob": "2001-04-13",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 4,
+    "username": "glorinez3",
+    "password": "sH9\\KHv37Q",
+    "firstName": "Gabey",
+    "lastName": "Lorinez",
+    "email": "glorinez3@slideshare.net",
+    "dob": "2000-10-16",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 5,
+    "username": "afratczak4",
+    "password": "nV6$#3!4HW\"d5i",
+    "firstName": "Alexandra",
+    "lastName": "Fratczak",
+    "email": "afratczak4@indiatimes.com",
+    "dob": "2000-11-21",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 6,
+    "username": "ajancy5",
+    "password": "jE6%SBom%>B",
+    "firstName": "Annie",
+    "lastName": "Jancy",
+    "email": "ajancy5@webmd.com",
+    "dob": "2001-08-01",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 7,
+    "username": "tblenkhorn6",
+    "password": "xD8\\)~*G+,",
+    "firstName": "Thorn",
+    "lastName": "Blenkhorn",
+    "email": "tblenkhorn6@amazon.com",
+    "dob": "2000-11-23",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 8,
+    "username": "mteodorski7",
+    "password": "qX0/|i@`m$*YzRf",
+    "firstName": "Margaretta",
+    "lastName": "Teodorski",
+    "email": "mteodorski7@devhub.com",
+    "dob": "2001-01-15",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 9,
+    "username": "hivanchin8",
+    "password": "tQ0@p6ufX*r}3={",
+    "firstName": "Hamil",
+    "lastName": "Ivanchin",
+    "email": "hivanchin8@cbc.ca",
+    "dob": "2001-10-04",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 10,
+    "username": "mfowlston9",
+    "password": "uI4|\\MmjIB~<n",
+    "firstName": "Mufi",
+    "lastName": "Fowlston",
+    "email": "mfowlston9@china.com.cn",
+    "dob": "2001-01-11",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 11,
+    "username": "cmacalroya",
+    "password": "jI0%?,Gp6{zZ",
+    "firstName": "Candice",
+    "lastName": "MacAlroy",
+    "email": "cmacalroya@wordpress.org",
+    "dob": "2001-01-27",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 12,
+    "username": "amanclarkb",
+    "password": "hU1?>o`MUso",
+    "firstName": "Alanson",
+    "lastName": "Manclark",
+    "email": "amanclarkb@creativecommons.org",
+    "dob": "2000-11-03",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 13,
+    "username": "cgerrelsc",
+    "password": "hN6>Sb.m",
+    "firstName": "Corena",
+    "lastName": "Gerrels",
+    "email": "cgerrelsc@telegraph.co.uk",
+    "dob": "2001-04-21",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 14,
+    "username": "rgerreltsd",
+    "password": "oK1.0ow@(Q(K{",
+    "firstName": "Rob",
+    "lastName": "Gerrelts",
+    "email": "rgerreltsd@ameblo.jp",
+    "dob": "2001-01-10",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 15,
+    "username": "njunkinsone",
+    "password": "kW6&!IK@e{F",
+    "firstName": "Nessa",
+    "lastName": "Junkinson",
+    "email": "njunkinsone@virginia.edu",
+    "dob": "2001-07-25",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 16,
+    "username": "tcousinsf",
+    "password": "dK3_dO+G",
+    "firstName": "Tadd",
+    "lastName": "Cousins",
+    "email": "tcousinsf@instagram.com",
+    "dob": "2001-01-05",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 17,
+    "username": "gdeedesg",
+    "password": "iZ6~,sZahh}!tnB@",
+    "firstName": "Gussie",
+    "lastName": "Deedes",
+    "email": "gdeedesg@tinyurl.com",
+    "dob": "2001-07-16",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 18,
+    "username": "mmartellinih",
+    "password": "aR4!VBL@.\"HF,b&q",
+    "firstName": "Misty",
+    "lastName": "Martellini",
+    "email": "mmartellinih@live.com",
+    "dob": "2000-11-02",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 19,
+    "username": "telgeei",
+    "password": "zT1.q{Nvr7",
+    "firstName": "Thorndike",
+    "lastName": "Elgee",
+    "email": "telgeei@biglobe.ne.jp",
+    "dob": "2001-01-06",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 20,
+    "username": "mamerj",
+    "password": "oY6=r+K|.G(Z",
+    "firstName": "Maddy",
+    "lastName": "Amer",
+    "email": "mamerj@fotki.com",
+    "dob": "2001-08-11",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 21,
+    "username": "alabbetk",
+    "password": "dQ1&C%er\"`z58/Hg",
+    "firstName": "Aubine",
+    "lastName": "LAbbet",
+    "email": "alabbetk@phoca.cz",
+    "dob": "2001-09-19",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 22,
+    "username": "relvinl",
+    "password": "xJ1{T%,{Aoa",
+    "firstName": "Rina",
+    "lastName": "Elvin",
+    "email": "relvinl@npr.org",
+    "dob": "2001-02-05",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 23,
+    "username": "eeglesem",
+    "password": "cS0%x7?mZX",
+    "firstName": "Evonne",
+    "lastName": "Eglese",
+    "email": "eeglesem@kickstarter.com",
+    "dob": "2000-11-12",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 24,
+    "username": "mlumbern",
+    "password": "pT1@3.z$1U_M+_%",
+    "firstName": "Mathias",
+    "lastName": "Lumber",
+    "email": "mlumbern@prlog.org",
+    "dob": "2000-10-18",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 25,
+    "username": "tsinclaro",
+    "password": "wW6\\\"$Eu}X",
+    "firstName": "Teena",
+    "lastName": "Sinclar",
+    "email": "tsinclaro@gizmodo.com",
+    "dob": "2001-05-30",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 26,
+    "username": "kbaccasp",
+    "password": "tR4_Et6{Bk=jdH?9",
+    "firstName": "Kippar",
+    "lastName": "Baccas",
+    "email": "kbaccasp@bandcamp.com",
+    "dob": "2001-03-05",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 27,
+    "username": "kguierreq",
+    "password": "fD6#A*Xfm/",
+    "firstName": "Kelci",
+    "lastName": "Guierre",
+    "email": "kguierreq@soup.io",
+    "dob": "2001-04-18",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 28,
+    "username": "aguinessr",
+    "password": "yK9}?p3r_tqbW/*F",
+    "firstName": "Angil",
+    "lastName": "Guiness",
+    "email": "aguinessr@nhs.uk",
+    "dob": "2001-03-12",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 29,
+    "username": "jcarolans",
+    "password": "gH0}`+*4",
+    "firstName": "Jeanette",
+    "lastName": "Carolan",
+    "email": "jcarolans@nasa.gov",
+    "dob": "2000-12-03",
+    "role": "STUDENT"
+  },
+  {
+    "_id": 30,
+    "username": "omacgrayt",
+    "password": "dV1`L9x)ifb8'%Ab",
+    "firstName": "Obidiah",
+    "lastName": "MacGray",
+    "email": "omacgrayt@dmoz.org",
+    "dob": "2000-12-03",
+    "role": "STUDENT"
+  }
+]
