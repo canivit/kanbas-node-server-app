@@ -9,6 +9,7 @@ export function moduleRoutes(app: Express) {
       res.sendStatus(404).send("Module not found");
       return;
     }
+
     db.modules[index] = { ...req.body, _id: moduleId };
     res.send(db.modules[index]);
   });
@@ -20,6 +21,7 @@ export function moduleRoutes(app: Express) {
       res.sendStatus(404).send("Module not found");
       return;
     }
+
     db.modules.splice(index, 1);
     res.sendStatus(200);
   });
@@ -27,10 +29,16 @@ export function moduleRoutes(app: Express) {
   app.post(
     "/api/courses/:courseId/modules",
     (req: Request<{ courseId: string }, {}, Module, {}>, res) => {
-      const { courseId } = req.params;
+      const courseId = parseInt(req.params.courseId);
+      const course = db.courses.find((c) => c._id === courseId);
+      if (!course) {
+        res.sendStatus(404).send("Course not found");
+        return;
+      }
+
       const newModule = {
         ...req.body,
-        course: parseInt(courseId),
+        course: courseId,
         _id: new Date().getTime(),
       };
       db.modules.push(newModule);
