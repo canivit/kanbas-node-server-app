@@ -5,10 +5,14 @@ import cors from "cors";
 import { courseRoutes } from "./courses/routes";
 import { moduleRoutes } from "./modules/routes";
 import { assignmentRoutes } from "./assignments/routes";
+import mongoose from "mongoose";
+import { userRoutes } from "./users/routes";
 
+mongoose.connect("mongodb://localhost:27017/kanbas");
 const app = express();
 app.use(cors());
 app.use(express.json());
+userRoutes(app);
 assignmentRoutes(app);
 moduleRoutes(app);
 courseRoutes(app);
