@@ -27,6 +27,11 @@ export function userRoutes(app: Express) {
     res.send(currentUser);
   });
 
+  app.get("/api/users", async (_req, res) => {
+    const users = await dao.findAllUsers();
+    res.json(users);
+  });
+
   app.post(
     "/api/users/:userId",
     async (req: Request<{ userId: string }, {}, User>, res) => {
