@@ -26,6 +26,21 @@ export function userRoutes(app: Express) {
     }
     res.send(currentUser);
   });
+
+  app.post(
+    "/api/users/:userId",
+    async (req: Request<{ userId: string }, {}, User>, res) => {
+      const { userId } = req.params;
+      const user = await dao.findUserById(userId);
+      if (!user) {
+        res.status(404).send("User not found");
+        return;
+      }
+
+      const update = await dao.updateUser(userId, req.body);
+      res.json(update);
+    }
+  );
 }
 
 type Credentials = {
