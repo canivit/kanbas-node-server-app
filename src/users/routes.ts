@@ -59,6 +59,20 @@ export function userRoutes(app: Express) {
       res.status(400).send("Failed to create user");
     }
   });
+
+  app.get(
+    "/api/users/:userId",
+    async (req: Request<{ userId: string }>, res) => {
+      const { userId } = req.params;
+      const user = await dao.findUserById(userId);
+      if (!user) {
+        res.status(404).send("User not found");
+        return;
+      }
+
+      res.json(user);
+    }
+  );
 }
 
 type Credentials = {
