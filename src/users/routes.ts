@@ -48,6 +48,17 @@ export function userRoutes(app: Express) {
       res.json(update);
     }
   );
+
+  app.put("/api/users", async (req: Request<{}, {}, User>, res) => {
+    try {
+      const payload: any = { ...req.body };
+      delete payload._id;
+      const user = await dao.createUser(payload);
+      res.json(user);
+    } catch {
+      res.status(400).send("Failed to create user");
+    }
+  });
 }
 
 type Credentials = {
