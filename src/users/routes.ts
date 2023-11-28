@@ -43,6 +43,8 @@ export function userRoutes(app: Express) {
       }
 
       const update = await dao.updateUser(userId, req.body);
+      const updatedUser = await dao.findUserById(userId);
+      currentUser = updatedUser ? updatedUser : currentUser;
       res.json(update);
     }
   );
