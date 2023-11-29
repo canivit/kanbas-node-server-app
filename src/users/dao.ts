@@ -5,7 +5,7 @@ export const createUser = async (user: User) => await userModel.create(user);
 export const findAllUsers = async () => await userModel.find();
 export const findUserById = async (id: string) => await userModel.findById(id);
 export const findUserByUsername = async (username: string) =>
-  await userModel.findOne({ username });
+  await userModel.findOne({ username: username });
 export const findUserByCredentials = async (
   username: string,
   password: string

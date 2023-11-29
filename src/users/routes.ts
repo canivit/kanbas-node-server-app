@@ -19,6 +19,20 @@ export function userRoutes(app: Express) {
     }
   );
 
+  app.post(
+    "/api/users/signup",
+    async (req: Request<{}, {}, Credentials>, res) => {
+      const user = await dao.findUserByUsername(req.body.username);
+      if (user !== null) {
+        res.status(400).send("Username already taken");
+        return;
+      }
+
+      currentUser = await dao.createUser(req.body);
+      res.json(currentUser);
+    }
+  );
+
   app.get("/api/users/account", async (_req, res) => {
     if (!currentUser) {
       res.status(401).send("Not signed in");
@@ -58,6 +72,11 @@ export function userRoutes(app: Express) {
     } catch {
       res.status(400).send("Failed to create user");
     }
+  });
+
+  app.get("/api/users/signout", async (_req, res) => {
+    currentUser = false;
+    res.sendStatus(200);
   });
 
   app.get(
