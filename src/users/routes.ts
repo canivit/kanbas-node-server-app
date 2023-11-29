@@ -2,43 +2,50 @@ import { Express, Request } from "express";
 import * as dao from "./dao";
 import { User } from "./schema";
 
-let currentUser: User | false = false;
+declare module "express-session" {
+  interface SessionData {
+    currentUser: User;
+  }
+}
 
 export function userRoutes(app: Express) {
   app.post(
     "/api/users/signin",
     async (req: Request<{}, {}, Credentials>, res) => {
       const { username, password } = req.body;
-      currentUser =
-        (await dao.findUserByCredentials(username, password)) ?? false;
-      if (!currentUser) {
+      const user = await dao.findUserByCredentials(username, password);
+      if (!user) {
         res.status(401).send("Invalid credentials");
         return;
       }
-      res.send(currentUser);
+
+      req.session.currentUser = user;
+      res.send(user);
     }
   );
 
   app.post(
     "/api/users/signup",
     async (req: Request<{}, {}, Credentials>, res) => {
-      const user = await dao.findUserByUsername(req.body.username);
+      let user = await dao.findUserByUsername(req.body.username);
       if (user !== null) {
         res.status(400).send("Username already taken");
         return;
       }
 
-      currentUser = await dao.createUser(req.body);
-      res.json(currentUser);
+      user = await dao.createUser(req.body);
+      req.session.currentUser = user;
+      res.json(user);
     }
   );
 
-  app.get("/api/users/account", async (_req, res) => {
-    if (!currentUser) {
+  app.get("/api/users/account", async (req, res) => {
+    if (!req.session.currentUser) {
       res.status(401).send("Not signed in");
       return;
     }
-    res.send(currentUser);
+
+    res.send(req.session.currentUser);
   });
 
   app.get("/api/users", async (_req, res) => {
@@ -57,8 +64,6 @@ export function userRoutes(app: Express) {
       }
 
       const update = await dao.updateUser(userId, req.body);
-      const updatedUser = await dao.findUserById(userId);
-      currentUser = updatedUser ? updatedUser : currentUser;
       res.json(update);
     }
   );
@@ -74,8 +79,8 @@ export function userRoutes(app: Express) {
     }
   });
 
-  app.get("/api/users/signout", async (_req, res) => {
-    currentUser = false;
+  app.get("/api/users/signout", async (req, res) => {
+    req.session.destroy(() => {});
     res.sendStatus(200);
   });
 
