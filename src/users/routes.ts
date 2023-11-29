@@ -73,6 +73,15 @@ export function userRoutes(app: Express) {
       res.json(user);
     }
   );
+
+  app.delete(
+    "/api/users/:userId",
+    async (req: Request<{ userId: string }>, res) => {
+      const { userId } = req.params;
+      const result = await dao.deleteUser(userId);
+      res.json(result);
+    }
+  );
 }
 
 type Credentials = {
